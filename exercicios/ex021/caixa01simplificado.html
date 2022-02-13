@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo de caixas</title>
+    <style>
+        h1{
+            display: inline;
+            background-color:plum;
+           height:300px;
+           width:300px;
+
+           /*border-width:10px;   NÃO SIMPLIFICADO
+           border-style:solid;
+           border-color:rgb(255, 68, 162);*/
+           border:10px solid rgb(255, 68, 162); /* SIMPLIFICADO */
+
+         /*  padding-top: 10px;
+           padding-right: 10px; NÃO SIMPLIFICADO
+           padding-bottom: 10px;
+           padding-left: 10px;*/
+           padding: 10px ; /* SIMPLIFICADO, SE TODOS OS VALORES SAO IGUAIS BASTA COLOCAR SO UMA VEZ*/
+
+           /*margin-top: 10px; 
+           margin-right: 20px;     NÃO SIMLIFICADO
+           margin-bottom: 10px;     
+           margin-left: 20px;*/
+           margin: 10px 20PX; /* SIMPLIFICADO, 10PX VAI PARA CIMA E BAIXO E O 20PX VAI PARA DIREITA E ESQUERDA*/
+
+          /* outline-width: 6px;
+           outline-style: dashed; NÃO SIMPLIFICADO
+           outline-color:red;*/
+           outline: 6px dashed red; /*SIMPLIFICADO*/
+        }
+        a{
+            display:block;
+           /* border-width:5px;
+            border-style: solid;           NÃO SIMPLIFICADO
+            border-color:rgb(110, 108, 109);*/
+            border: 5px solid red; /*SIMPLIFICADO*/
+
+           /* padding-top: 10px;
+           padding-right: 10px;     NÃO SIMPLIFICADO
+           padding-bottom: 10px;
+           padding-left: 10px;*/
+           padding: 10px ; /* SIMPLIFICADO*/
+
+           /*margin-top: 10px; 
+           margin-right: 10px;     NÃO SIMPLIFICADO
+           margin-bottom: 20px;
+           margin-left: 10px;*/
+           margin:10px 10px 20px 10px; /* SIMPLIFICADO*/
+        }
+    </style>
+</head>
+<body>
+  <h1>Exemplo de caixa Box Level</h1>  
+    <p>páragrafos tambem são exemplos de box-level , mas os <a href="#">os links são exemplos de caixas inline-level</a> Vamos ver como tudo isso funciona</p>
+</body>
+</html>
